@@ -93,7 +93,7 @@ struct NotesView: View {
                 .frame(height: 50)
                 
                 TextEditor(text: $titleText)
-                    .foregroundColor(titleText.isEmpty ? Color.gray : Color.appBlack)
+                    .foregroundColor(titleText.isEmpty ? Color.gray : Color.white)
                     .font(.system(size: 35, weight: .regular))
                     .padding()
                     .frame(height: 100)
@@ -122,7 +122,7 @@ struct NotesView: View {
                     )
 
                 TextEditor(text: $bodyText)
-                    .foregroundColor(bodyText.isEmpty ? Color.gray : Color.appBlack)
+                    .foregroundColor(bodyText.isEmpty ? Color.gray : Color.white)
                     .font(.system(size: 23, weight: .regular))
                     .padding()
                     .background(Color("appBlack"))
